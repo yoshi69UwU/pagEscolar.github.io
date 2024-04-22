@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú desplegable con clic</title>
+<style>
+  /* Estilos para el menú */
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+  .menu span:hover{
+background-color: aqua;
+  }
+
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    background-color: #cf0f0f;
+    min-width: 160px;
+    box-shadow: 0 2px 4px rgba(55, 148, 24, 0.1);
+    z-index: 1;
+  }
+
+  .menu li {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .menu li:hover {
+    background-color: #7575dc;
+  }
+</style>
+<script>
+  // JavaScript para mostrar/ocultar el menú al hacer clic
+  function toggleMenu() {
+    var menu = document.getElementById("dropdown-menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+  }
+</script>
+</head>
+<body>
+
+<div class="menu" onclick="toggleMenu()">
+  <span>menú</span>
+  <ul id="dropdown-menu">
+    <li><a href="#">Opción 1</a></li>
+    <li><a href="#">Opción 2</a></li>
+    <li><a href="#">Opción 3</a></li>
+    <li><a href="#">Opción 4</a></li>
+  </ul>
+</div>
+
+</body>
+</html>

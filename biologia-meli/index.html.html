@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BIOTECNOLOGIA</title>
+  <link rel="stylesheet" href="bio.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="imagenes/biotegnologia.png">
+</head>
+<body>
+  <div id="divmenu" class="navbar-container">
+    <nav class="navbar">
+      <a href="bio.html" target="_blank"><img src="imagenes/biotegnologia.png"></a>
+      <ul id="menu">
+        <!-- Botón para mostrar/ocultar el menú -->
+        <button class="dropdown" onclick="toggleDropdown()"><strong>Menu</strong></button>
+
+        <!-- Menú desplegable -->
+        <div class="dropdown-content" id="myDropdown">
+            <a href="mod.html">profesores</a>
+            <a href="#">horarios</a>
+        </div>
+
+        <script>
+            // Función para mostrar u ocultar el menú
+            function toggleDropdown() {
+                var dropdown = document.getElementById("myDropdown");
+                if (dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                } else {
+                    dropdown.style.display = "block";
+                }
+            }
+        </script>
+        <li><a href="bio.html"> <strong>Inicio</strong></a></li>
+        <li><a href="pag-ayuda.html"><strong>Ayuda</strong></a></li>
+        <li><a href="contacto.html"><strong>Contacto</strong></a></li>
+        <img src="imagenes/cecytem.png" >
+      </ul>
+    </nav>
+  </div>
+
+  <header class="text-center">
+    <h1 class="titulo">BIOTECNOLOGIA</h1>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          <ol><h2>¿Qué es la biotecnología?</h2><em>La biotecnología es un campo multidisciplinario que combina la biología con la tecnología para crear productos y procesos que beneficien a la humanidad. Este campo abarca una amplia gama de áreas, desde la agricultura y la medicina hasta la industria alimentaria y medioambiental. Aquí hay algunos aspectos importantes sobre la biotecnología:</em></ol>
+            <br><br><br>
+            <ol><h2>Medicina y Salud</h2><em> La biotecnología ha revolucionado la medicina en áreas como la producción de medicamentos, terapia génica, diagnóstico molecular y desarrollo de vacunas. Por ejemplo, la producción de insulina recombinante ha transformado el tratamiento de la diabetes.</em></ol>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicadores -->
+          <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ul>
+          <!-- Imágenes del carrusel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagenes/imagen1.jpg" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/imagen2.jpg" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/imagen3.jpg" alt="Imagen 3">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/imagen4.jpg" alt="Imagen 4">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/imagen5.jpg" alt="Imagen 5">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/imagen6.jpg" alt="Imagen 6">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/imagen7.jpg" alt="Imagen 7">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/imagen8.jpg" alt="Imagen 8">
+            </div>
+          </div>
+          <!-- Controles de navegación -->
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+        <ol><h2>Medio Ambiente</h2><em> La biotecnología se utiliza en la biodegradación de desechos y la descontaminación de suelos y aguas contaminadas. Los microorganismos modificados genéticamente pueden utilizarse para descomponer productos químicos tóxicos y reducir la contaminación, entre muchas otras cosas que podrás encontrar.</em></ol>
+      </div>
+    </div>
+  </div>
+
+  <div id="pie" class="text-center">
+    <ul id="redes" class="list-inline">
+      <li class="list-inline-item"><a href="https://facebook.com" target="_blank"><img src="imagenes/facebook.png" alt="Facebook"></a></li>
+      <li class="list-inline-item"><a href="https://www.instagram.com/explore/locations/895801930/cecytem-plantel-20-uruapan/" target="_blank"><img src="imagenes/instagram.png" alt="Instagram"></a></li>
+      <li class="list-inline-item"><a href="https://www.facebook.com/cecyteuruapan20/?locale=es_LA" target="_blank"><img src="imagenes/tiktok.png" alt="TikTok"></a></li>
+    </ul>
+    <footer>
+      Derechos reservados &copy; 2013-2024
+    </footer>
+  </div>
+
+  <!-- Asegúrate de incluir jQuery y Bootstrap JavaScript al final del body -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Asegúrate de incluir el script personalizado para el menú -->
+  <script src="script5.js"></script>
+</body>
+</html>
